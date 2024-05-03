@@ -1,0 +1,1 @@
+use in wsl: npx nodemon [index.js] 
