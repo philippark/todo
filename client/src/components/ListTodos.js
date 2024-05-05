@@ -48,9 +48,9 @@ const ListTodos = () => {
                 <tbody>
                     {todos.map(todo=>(
                         <tr key = {todo.todo_id}>
-                            <th>{todo.description}</th>
-                            <th><EditTodo/></th>
-                            <th><button className="btn btn-danger" onClick={()=>deleteTodo(todo.todo_id)}>Delete</button></th>
+                            <td>{todo.description}</td>
+                            <td><EditTodo todo={todo}/></td>
+                            <td><button className="btn btn-danger" onClick={()=>deleteTodo(todo.todo_id)}>Delete</button></td>
                         </tr>
                     ))}
                 </tbody>
